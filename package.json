@@ -1,0 +1,40 @@
+{
+  "name": "auto-release-npm-package-test",
+  "version": "0.0.1",
+  "description": "auto release npm package test",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resonance-box/recital.git"
+  },
+  "license": "MIT",
+  "author": "ot07",
+  "engines": {
+    "node": "18.x",
+    "pnpm": ">=7.26.0"
+  },
+  "packageManager": "pnpm@7.26.0",
+  "module": "./dist/auto-release-npm-package-test.mjs",
+  "types": "./dist/auto-release-npm-package-test.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/auto-release-npm-package-test.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
