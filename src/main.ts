@@ -1,1 +1,1 @@
-export { setupCounter } from './counter.ts'
+export { add } from "./function.ts";
